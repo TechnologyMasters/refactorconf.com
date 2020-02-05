@@ -1,0 +1,29 @@
+//
+//
+// user-variables.scss
+//
+// Place your own variable overrides here, these will override any Bootstrap and theme variables.
+
+
+// Color Scheme
+// Uncomment the variables below and change the hex values.
+
+$primary:       #ff7d00;
+$primary-2:     #2A2A72;
+$primary-3:     #020122;
+
+$theme-color-scheme: (
+    "primary":    $primary,
+    "primary-2":  $primary-2,
+    "primary-3":  $primary-3
+);
+
+$theme-colors: (
+    "primary":    $primary,
+    "primary-2":  $primary-2,
+    "primary-3":  $primary-3,
+);
+
+.card svg.icon {
+  transform: scale(1.7)
+}

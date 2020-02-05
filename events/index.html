@@ -1,0 +1,27 @@
+---
+layout: list
+title: Conferences & Events
+collection: events
+image: events/banner.jpg
+---
+
+<div class="alert status-primary">
+  <i class="fas fa-info-circle"></i>
+
+  <a href="email@ahmadnassri.com?subject=Public%20Speaking!&body=Hey%20Ahmad,%20">Contact me</a> regarding local, national or international speaking enquiries. Happy to consider travel within my work schedule.
+</div>
+
+{% assign years = site.events | sort: 'date' | reverse | group_by_exp: "post", "post.date | date:'%Y'" %}
+
+{% for year in years %}
+  <section>
+    <h6 id="{{ year.name }}" class="legend">{{ year.name }}</h6>
+
+    {% for event in year.items %}
+
+      <h5 id="{{ event.date | date: '%Y' }}"><a href="{{ event.url | remove: 'index.html' }}">{{ event.title }}</a></h5>
+
+      <p><strong>{{ event.date | date: '%B %d, %Y' }}</strong> &mdash; {{ event.excerpt | markdownify | remove: '<p>' }}
+    {% endfor %}
+  </section>
+{% endfor %}
