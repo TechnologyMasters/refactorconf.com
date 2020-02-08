@@ -1,10 +1,10 @@
 repository:
-  name: ahmadnassri.com
-  description: Ahmad's website
-  topics: ahmadnassri
-  homepage: https://ahmadnassri.com
-  private: true
-  has_issues: false
+  name: refactorconf.com
+  description: REFACTOR Conf
+  topics: refactor, conference
+  homepage: https://refactorconf.com
+  private: false
+  has_issues: true
   has_wiki: false
   has_downloads: false
   has_projects: false
