@@ -54,32 +54,19 @@ body.loaded > div.loader{
   animation: hideLoader .5s linear .5s forwards;
 }
 
-/* Typing Animation */
-.loading-animation {
-width: 6px;
-height: 6px;
-border-radius: 50%;
-animation: typing 1s linear infinite alternate;
-position: relative;
-left: -12px;
+section.bg-primary {
+  background-image: url('/assets/images/bg.jpg');
+  background-color: #ff7d00;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center center;
 }
 
-@keyframes typing {
-0% {
-  background-color: rgba(100,100,100, 1);
-  box-shadow: 12px 0px 0px 0px rgba(100,100,100, 0.2),
-    24px 0px 0px 0px rgba(100,100,100, 0.2);
-}
-
-25% {
-  background-color: rgba(100,100,100, 0.4);
-  box-shadow: 12px 0px 0px 0px rgba(100,100,100, 2),
-    24px 0px 0px 0px rgba(100,100,100, 0.2);
-}
-
-75% {
-  background-color: rgba(100,100,100, 0.4);
-  box-shadow: 12px 0px 0px 0px rgba(100,100,100, 0.2),
-    24px 0px 0px 0px rgba(100,100,100, 1);
-}
+html[data-useragent*='MSIE 10.0'],
+html[data-useragent*='rv:11.0'] {
+  section.bg-primary {
+    background: none;
+    $color: rgba(#ff7d00, 50%);
+    background: linear-gradient($color, $color), url('/assets/images/bg.jpg');
+  }
 }
