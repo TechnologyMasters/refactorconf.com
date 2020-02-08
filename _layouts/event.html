@@ -2,637 +2,626 @@
 layout: base
 ---
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="loader">
-    <div class="loading-animation"></div>
+<div class="loader">
+  <div class="loading-animation"></div>
+</div>
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fade-page" href="/">{{ page.title }}</a>
+
+      <div class="collapse navbar-collapse justify-content-end">
+        <a href="{{ page.tickets }}" class="btn btn-primary ml-lg-3">Buy Tickets</a>
+        <a href="{{ page.call-for-pappers }}" target="_blank" class="btn btn-primary-2 ml-lg-3">Call for Speakers</a>
+      </div>
+    </div>
+  </nav>
+
+<section class="bg-primary text-light p-0 o-hidden">
+  <div class="container layer-2">
+    <div class="row py-6 min-vh-80 align-items-center" data-aos="fade-up">
+      <div class="col-lg-9 col-xl-8">
+        <h5>{{ page.date | date_to_long_string }}</h5>
+        <h1 class="display-1">{{ page.title }}</h1>
+        <p class="lead mb-4">{{ page.location }}<br/>{{ page.address }}</p>
+        <a href="{{ page.tickets }}" class="btn btn-primary btn-lg">Buy Tickets</a>
+        <a class="btn btn-primary-2 btn-lg" href="{{ page.call-for-pappers }}" target="_blank">Call for Speakers</a>
+      </div>
+    </div>
   </div>
+  <div class="divider flip-x">
+    <img class="bg-primary-3" src="/assets/images/dividers/divider-3.svg" alt="divider graphic" data-inject-svg />
+  </div>
+</section>
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
-      <div class="container">
-        <a class="navbar-brand fade-page" href="/">REFACTOR 2020</a>
+<section class="bg-primary-3 text-light has-divider">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-12">
+        <!-- <div class="col-md-6 mb-3 mb-md-0"> -->
+        <h2 class="h1">Community focused, single track, one day conference</h2>
+        <p class="lead">REFACTOR fosters the local community as we learn from each other and embrace modern methods
+          of building software, learn of emerging best practices, address the pain points for startups and
+          enterprise teams. REFACTOR will have something for everyone.</p>
+      </div>
+      <!--
+      <div class="col-md-5">
+        <small class="text-uppercase mb-4">Sponsored By</small>
+        <ul class="d-flex flex-wrap list-unstyled">
+          <li class="mr-4 mb-5" data-aos="fade-up" data-aos-delay="100">
+            <img class="bg-white icon icon-logo icon-md" src="/assets/images/logos/brand/intercom.svg" alt="icon"
+              data-inject-svg />
+          </li>
+          <li class="mr-4 mb-5" data-aos="fade-up" data-aos-delay="200">
+            <img class="bg-white icon icon-logo icon-md" src="/assets/images/logos/brand/slack.svg" alt="icon"
+              data-inject-svg />
+          </li>
+          <li class="mr-4 mb-5" data-aos="fade-up" data-aos-delay="300">
+            <img class="bg-white icon icon-logo icon-md" src="/assets/images/logos/brand/spotify.svg" alt="icon"
+              data-inject-svg />
+          </li>
+          <li class="mr-4 mb-5" data-aos="fade-up" data-aos-delay="400">
+            <img class="bg-white icon icon-logo icon-md" src="/assets/images/logos/brand/target.svg" alt="icon"
+              data-inject-svg />
+          </li>
+          <li class="mr-4 mb-5" data-aos="fade-up" data-aos-delay="500">
+            <img class="bg-white icon icon-logo icon-md" src="/assets/images/logos/brand/time.svg" alt="icon"
+              data-inject-svg />
+          </li>
+        </ul>
+      </div>
+      -->
+    </div>
+  </div>
+  <div class="divider">
+    <img class="bg-white" src="/assets/images/dividers/divider-3.svg" alt="divider graphic" data-inject-svg />
+  </div>
+</section>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-          <img class="icon navbar-toggler-open" src="/assets/images/icons/menu.svg" alt="menu interface icon" data-inject-svg />
-          <img class="icon navbar-toggler-close" src="/assets/images/icons/cross.svg" alt="cross interface icon" data-inject-svg />
-        </button>
+<section>
+  <div class="container lead">
+    <p><em>After our successful <a href="https://functions.events/2017/toronto/">2017</a> and <a href="https://functions.events/2018/toronto/">2018</a> &quot;Functions Conference&quot; events, we&#39;re back this year as <strong>REFACTOR: Serverless</strong>!</em></p>
+    <p><em><strong>REFACTOR</strong></em> is a series of <strong>community focused, single track, one day conferences</strong>. With the goal of fostering the community and helping all of us learn from each other as we embrace modern methods of building software, learn of emerging best practices, address the pain points for startups and enterprise teams. <em>REFACTOR</em> will have something for everyone.</p>
 
-        <div class="collapse navbar-collapse justify-content-end">
-          <a href="{{ page.tickets }}" class="btn btn-primary ml-lg-3">Buy Tickets</a>
-          <a href="{{ page.call-for-pappers }}" target="_blank" class="btn btn-primary-2 ml-lg-3">Call for Speakers</a>
+    <p><em><strong>REFACTOR 2020: Serverless</strong></em> features a mix of industry-expert speakers with curated topics, and local speakers from the Toronto community sharing their experience and lessons in building serverless applications.</p>
+    <h3>Looking for more reasons to join?</h3>
+
+    <div class="row">
+      <div class="col-md-6 col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="card card-icon-2 card-body justify-content-between hover-shadow-3d">
+          <div class="icon-round mb-3 mb-md-4 icon bg-primary">
+            <img class="icon bg-primary" src="/assets/images/icons/smile.svg" alt="icon" data-inject-svg />
+          </div>
+
+          <p class="card-text">Our focus is to provide valuable educational content, so we keep our costs low, and remain environmentally conscious by avoiding unnecessary expenses other conferences tend to focus on. This helps us lower our ticket pricing and makes the event accessible to everyone</p>
+          <h5 class="mb-0">Not-for-profit</h5>
         </div>
       </div>
-    </nav>
 
-  <section class="bg-primary text-light p-0 o-hidden">
-    <img src="/assets/images/bg.jpg" alt="Image" class="bg-image blend-mode-multiply">
-    <div class="container layer-2">
-      <div class="row py-6 min-vh-80 align-items-center" data-aos="fade-up">
-        <div class="col-lg-9 col-xl-8">
-          <h5>{{ page.date | date_to_long_string }}</h5>
-          <h1 class="display-1">{{ page.title }}</h1>
-          <p class="lead mb-4">{{ page.location }}<br/>{{ page.address }}</p>
-          <a href="{{ page.tickets }}" class="btn btn-primary btn-lg">Buy Tickets</a>
-          <a class="btn btn-primary-2 btn-lg" href="{{ page.call-for-pappers }}" target="_blank">Call for Speakers</a>
+      <div class="col-md-6 col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="card card-icon-2 card-body justify-content-between hover-shadow-3d bg-primary text-light">
+          <div class="icon-round mb-3 mb-md-4 icon bg-white">
+            <img class="icon bg-white" src="/assets/images/icons/heart.svg" alt="icon" data-inject-svg />
+          </div>
+
+          <p class="card-text">All our events are run by local community organizers and volunteers, with the aim to represent the community and raise the profile of Toronto as capital for a sustainable tech community</p>
+          <h5 class="mb-0">Community focused</h5>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="card card-icon-2 card-body justify-content-between hover-shadow-3d bg-primary-2 text-light">
+          <div class="icon-round mb-3 mb-md-4 icon bg-white">
+            <img class="icon bg-white" src="/assets/images/icons/group.svg" alt="icon" data-inject-svg />
+          </div>
+
+          <p class="card-text">A percentage of proceeds from ticket sales will be donated to <a href="https://www.venturekids.ca/" target="_blank">Venture Kids</a>, a Canadian nonprofit dedicated to providing free, hands-on computer programming and startup workshops to youth in underserved urban and rural communities.</p>
+          <h5 class="mb-0">Pay it Forward</h5>
         </div>
       </div>
     </div>
-    <div class="divider flip-x">
-      <img class="bg-primary-3" src="/assets/images/dividers/divider-3.svg" alt="divider graphic" data-inject-svg />
-    </div>
-  </section>
 
-  <section class="bg-primary-3 text-light has-divider">
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-12">
-          <!-- <div class="col-md-6 mb-3 mb-md-0"> -->
-          <h2 class="h1">Community focused, single track, one day conference</h2>
-          <p class="lead">REFACTOR fosters the local community as we learn from each other and embrace modern methods
-            of building software, learn of emerging best practices, address the pain points for startups and
-            enterprise teams. REFACTOR will have something for everyone.</p>
-        </div>
-        <!--
-        <div class="col-md-5">
-          <small class="text-uppercase mb-4">Sponsored By</small>
-          <ul class="d-flex flex-wrap list-unstyled">
-            <li class="mr-4 mb-5" data-aos="fade-up" data-aos-delay="100">
-              <img class="bg-white icon icon-logo icon-md" src="/assets/images/logos/brand/intercom.svg" alt="icon"
-                data-inject-svg />
-            </li>
-            <li class="mr-4 mb-5" data-aos="fade-up" data-aos-delay="200">
-              <img class="bg-white icon icon-logo icon-md" src="/assets/images/logos/brand/slack.svg" alt="icon"
-                data-inject-svg />
-            </li>
-            <li class="mr-4 mb-5" data-aos="fade-up" data-aos-delay="300">
-              <img class="bg-white icon icon-logo icon-md" src="/assets/images/logos/brand/spotify.svg" alt="icon"
-                data-inject-svg />
-            </li>
-            <li class="mr-4 mb-5" data-aos="fade-up" data-aos-delay="400">
-              <img class="bg-white icon icon-logo icon-md" src="/assets/images/logos/brand/target.svg" alt="icon"
-                data-inject-svg />
-            </li>
-            <li class="mr-4 mb-5" data-aos="fade-up" data-aos-delay="500">
-              <img class="bg-white icon icon-logo icon-md" src="/assets/images/logos/brand/time.svg" alt="icon"
-                data-inject-svg />
-            </li>
-          </ul>
-        </div>
-        -->
+    <!-- <ul>
+      <li><strong></strong><br>.</li>
+      <li><strong></strong><br></li>
+      <li><strong>Top Quality Content</strong><br>Replay presentations from our <a href="https://www.youtube.com/playlist?list=PLNoTOsTRYfvhLh8sVrI6lHXfhIbDSons3">2018</a> and <a href="https://www.youtube.com/playlist?list=PLNoTOsTRYfvjgYXgrqHwu7w7kUVC4s4tu">2017</a> events and judge for yourself!</li>
+      <li><strong></strong><br></li>
+    </ul> -->
+  </div>
+</section>
+
+<!--
+<section>
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col">
+        <h2 class="h1">Featuring talks from</h2>
       </div>
     </div>
-    <div class="divider">
-      <img class="bg-white" src="/assets/images/dividers/divider-3.svg" alt="divider graphic" data-inject-svg />
-    </div>
-  </section>
-
-  <section>
-    <div class="container lead">
-      <p><em>After our successful <a href="https://functions.events/2017/toronto/">2017</a> and <a href="https://functions.events/2018/toronto/">2018</a> &quot;Functions Conference&quot; events, we&#39;re back this year as <strong>REFACTOR: Serverless</strong>!</em></p>
-      <p><em><strong>REFACTOR</strong></em> is a series of <strong>community focused, single track, one day conferences</strong>. With the goal of fostering the community and helping all of us learn from each other as we embrace modern methods of building software, learn of emerging best practices, address the pain points for startups and enterprise teams. <em>REFACTOR</em> will have something for everyone.</p>
-
-      <p><em><strong>REFACTOR 2020: Serverless</strong></em> features a mix of industry-expert speakers with curated topics, and local speakers from the Toronto community sharing their experience and lessons in building serverless applications.</p>
-      <h3>Looking for more reasons to join?</h3>
-
-      <div class="row">
-        <div class="col-md-6 col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="100">
-          <div class="card card-icon-2 card-body justify-content-between hover-shadow-3d">
-            <div class="icon-round mb-3 mb-md-4 icon bg-primary">
-              <img class="icon bg-primary" src="/assets/images/icons/smile.svg" alt="icon" data-inject-svg />
-            </div>
-
-            <p class="card-text">Our focus is to provide valuable educational content, so we keep our costs low, and remain environmentally conscious by avoiding unnecessary expenses other conferences tend to focus on. This helps us lower our ticket pricing and makes the event accessible to everyone</p>
-            <h5 class="mb-0">Not-for-profit</h5>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="200">
-          <div class="card card-icon-2 card-body justify-content-between hover-shadow-3d bg-primary text-light">
-            <div class="icon-round mb-3 mb-md-4 icon bg-white">
-              <img class="icon bg-white" src="/assets/images/icons/heart.svg" alt="icon" data-inject-svg />
-            </div>
-
-            <p class="card-text">All our events are run by local community organizers and volunteers, with the aim to represent the community and raise the profile of Toronto as capital for a sustainable tech community</p>
-            <h5 class="mb-0">Community focused</h5>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="300">
-          <div class="card card-icon-2 card-body justify-content-between hover-shadow-3d bg-primary-2 text-light">
-            <div class="icon-round mb-3 mb-md-4 icon bg-white">
-              <img class="icon bg-white" src="/assets/images/icons/group.svg" alt="icon" data-inject-svg />
-            </div>
-
-            <p class="card-text">A percentage of proceeds from ticket sales will be donated to <a href="https://www.venturekids.ca/" target="_blank">Venture Kids</a>, a Canadian nonprofit dedicated to providing free, hands-on computer programming and startup workshops to youth in underserved urban and rural communities.</p>
-            <h5 class="mb-0">Pay it Forward</h5>
-          </div>
+    <div class="row">
+      <div class="col-sm-6 col-lg-4 d-flex align-items-center mb-5" data-aos="fade-up" data-aos-delay="100">
+        <img src="/assets/images/avatars/male-1.jpg" alt="Benjamin Cameron" class="avatar avatar-xlg mr-3">
+        <div>
+          <h5 class="mb-0">Benjamin Cameron</h5>
+          <a href="#">@benjicam</a>
         </div>
       </div>
-
-      <!-- <ul>
-        <li><strong></strong><br>.</li>
-        <li><strong></strong><br></li>
-        <li><strong>Top Quality Content</strong><br>Replay presentations from our <a href="https://www.youtube.com/playlist?list=PLNoTOsTRYfvhLh8sVrI6lHXfhIbDSons3">2018</a> and <a href="https://www.youtube.com/playlist?list=PLNoTOsTRYfvjgYXgrqHwu7w7kUVC4s4tu">2017</a> events and judge for yourself!</li>
-        <li><strong></strong><br></li>
-      </ul> -->
-    </div>
-  </section>
-
-  <!--
-  <section>
-    <div class="container">
-      <div class="row mb-4">
-        <div class="col">
-          <h2 class="h1">Featuring talks from</h2>
+      <div class="col-sm-6 col-lg-4 d-flex align-items-center mb-5" data-aos="fade-up" data-aos-delay="200">
+        <img src="/assets/images/avatars/female-4.jpg" alt="Andrea Souzakis" class="avatar avatar-xlg mr-3">
+        <div>
+          <h5 class="mb-0">Andrea Souzakis</h5>
+          <a href="#">@sozakisnotsoz</a>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-6 col-lg-4 d-flex align-items-center mb-5" data-aos="fade-up" data-aos-delay="100">
-          <img src="/assets/images/avatars/male-1.jpg" alt="Benjamin Cameron" class="avatar avatar-xlg mr-3">
-          <div>
-            <h5 class="mb-0">Benjamin Cameron</h5>
-            <a href="#">@benjicam</a>
-          </div>
+      <div class="col-sm-6 col-lg-4 d-flex align-items-center mb-5" data-aos="fade-up" data-aos-delay="300">
+        <img src="/assets/images/avatars/male-2.jpg" alt="Anil Bhaktar" class="avatar avatar-xlg mr-3">
+        <div>
+          <h5 class="mb-0">Anil Bhaktar</h5>
+          <a href="#">@anilneedscoffee</a>
         </div>
-        <div class="col-sm-6 col-lg-4 d-flex align-items-center mb-5" data-aos="fade-up" data-aos-delay="200">
-          <img src="/assets/images/avatars/female-4.jpg" alt="Andrea Souzakis" class="avatar avatar-xlg mr-3">
-          <div>
-            <h5 class="mb-0">Andrea Souzakis</h5>
-            <a href="#">@sozakisnotsoz</a>
-          </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 d-flex align-items-center mb-5" data-aos="fade-up" data-aos-delay="400">
+        <img src="/assets/images/avatars/female-3.jpg" alt="Candice Tierman" class="avatar avatar-xlg mr-3">
+        <div>
+          <h5 class="mb-0">Candice Tierman</h5>
+          <a href="#">@tioptierwoman</a>
         </div>
-        <div class="col-sm-6 col-lg-4 d-flex align-items-center mb-5" data-aos="fade-up" data-aos-delay="300">
-          <img src="/assets/images/avatars/male-2.jpg" alt="Anil Bhaktar" class="avatar avatar-xlg mr-3">
-          <div>
-            <h5 class="mb-0">Anil Bhaktar</h5>
-            <a href="#">@anilneedscoffee</a>
-          </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 d-flex align-items-center mb-5" data-aos="fade-up" data-aos-delay="500">
+        <img src="/assets/images/avatars/male-5.jpg" alt="Andrew Finnigan" class="avatar avatar-xlg mr-3">
+        <div>
+          <h5 class="mb-0">Andrew Finnigan</h5>
+          <a href="#">@finnigain</a>
         </div>
-        <div class="col-sm-6 col-lg-4 d-flex align-items-center mb-5" data-aos="fade-up" data-aos-delay="400">
-          <img src="/assets/images/avatars/female-3.jpg" alt="Candice Tierman" class="avatar avatar-xlg mr-3">
-          <div>
-            <h5 class="mb-0">Candice Tierman</h5>
-            <a href="#">@tioptierwoman</a>
-          </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 d-flex align-items-center mb-5" data-aos="fade-up" data-aos-delay="600">
+        <img src="/assets/images/avatars/male-4.jpg" alt="Cedric Vance" class="avatar avatar-xlg mr-3">
+        <div>
+          <h5 class="mb-0">Cedric Vance</h5>
+          <a href="#">@woticed</a>
         </div>
-        <div class="col-sm-6 col-lg-4 d-flex align-items-center mb-5" data-aos="fade-up" data-aos-delay="500">
-          <img src="/assets/images/avatars/male-5.jpg" alt="Andrew Finnigan" class="avatar avatar-xlg mr-3">
-          <div>
-            <h5 class="mb-0">Andrew Finnigan</h5>
-            <a href="#">@finnigain</a>
-          </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 d-flex align-items-center mb-5" data-aos="fade-up" data-aos-delay="700">
+        <img src="/assets/images/avatars/female-2.jpg" alt="Anne Pearce" class="avatar avatar-xlg mr-3">
+        <div>
+          <h5 class="mb-0">Anne Pearce</h5>
+          <a href="#">@apearced1</a>
         </div>
-        <div class="col-sm-6 col-lg-4 d-flex align-items-center mb-5" data-aos="fade-up" data-aos-delay="600">
-          <img src="/assets/images/avatars/male-4.jpg" alt="Cedric Vance" class="avatar avatar-xlg mr-3">
-          <div>
-            <h5 class="mb-0">Cedric Vance</h5>
-            <a href="#">@woticed</a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4 d-flex align-items-center mb-5" data-aos="fade-up" data-aos-delay="700">
-          <img src="/assets/images/avatars/female-2.jpg" alt="Anne Pearce" class="avatar avatar-xlg mr-3">
-          <div>
-            <h5 class="mb-0">Anne Pearce</h5>
-            <a href="#">@apearced1</a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4 d-flex align-items-center mb-5" data-aos="fade-up" data-aos-delay="800">
-          <img src="/assets/images/avatars/female-1.jpg" alt="Zoe Chan" class="avatar avatar-xlg mr-3">
-          <div>
-            <h5 class="mb-0">Zoe Chan</h5>
-            <a href="#">@zc_develop</a>
-          </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 d-flex align-items-center mb-5" data-aos="fade-up" data-aos-delay="800">
+        <img src="/assets/images/avatars/female-1.jpg" alt="Zoe Chan" class="avatar avatar-xlg mr-3">
+        <div>
+          <h5 class="mb-0">Zoe Chan</h5>
+          <a href="#">@zc_develop</a>
         </div>
       </div>
     </div>
-  </section> -->
+  </div>
+</section> -->
 
-  <!-- <section>
-    <div class="container">
-      <div class="row aling-items-center mb-4">
-        <div class="col">
-          <h2 class="h1 mb-sm-0">Schedule</h2>
+<!-- <section>
+  <div class="container">
+    <div class="row aling-items-center mb-4">
+      <div class="col">
+        <h2 class="h1 mb-sm-0">Schedule</h2>
+      </div>
+      <div class="col-auto">
+        <ul class="nav" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link btn active" href="#talks" id="talks-tab" data-toggle="tab" aria-controls="talks"
+              role="tab" aria-selected="true">Talks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn" href="#workshops" id="workshops-tab" data-toggle="tab" aria-controls="workshops"
+              role="tab" aria-selected="false">Workshops</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row no-gutters d-none d-md-flex bg-white py-3">
+      <div class="col-xl-7 col-md-6">
+        <span class="h6 mb-0 text-muted">Title</span>
+      </div>
+      <div class="col">
+        <span class="h6 mb-0 text-muted">Time</span>
+      </div>
+      <div class="col">
+        <span class="h6 mb-0 text-muted">Speaker</span>
+      </div>
+    </div>
+
+    <div class="tab-content" data-aos="fade-up">
+      <div id="talks" class="list-group list-group-flush tab-pane fade show active" role="tabpanel"
+        aria-labelledby="talks-tab">
+        <a href="#" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
+          <div class="col-xl-7 col-md-6">
+            <h5 class="mb-0">Registration</h5>
+          </div>
+          <div class="col-md">
+            <span>8:30am</span>
+          </div>
+          <div class="col-md">
+            <span>–</span>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
+          <div class="col-xl-7 col-md-6">
+            <h5 class="mb-0">Resisting Complexity</h5>
+          </div>
+          <div class="col-md">
+            <span>9:30am</span>
+          </div>
+          <div class="col-md">
+            <div class="d-flex align-items-center mt-2 mt-md-0">
+              <img src="/assets/images/avatars/male-1.jpg" alt="Benjamin Cameron" class="avatar avatar-sm mr-2">
+              <span class="h6 mb-0">Benjamin Cameron</span>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
+          <div class="col-xl-7 col-md-6">
+            <h5 class="mb-0">Freelancing and The Sharing Economy</h5>
+          </div>
+          <div class="col-md">
+            <span>10:20am</span>
+          </div>
+          <div class="col-md">
+            <div class="d-flex align-items-center mt-2 mt-md-0">
+              <img src="/assets/images/avatars/male-4.jpg" alt="Cedric Vance" class="avatar avatar-sm mr-2">
+              <span class="h6 mb-0">Cedric Vance</span>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
+          <div class="col-xl-7 col-md-6">
+            <h5 class="mb-0">Marketing A Unique Skill-set</h5>
+          </div>
+          <div class="col-md">
+            <span>11:30am</span>
+          </div>
+          <div class="col-md">
+            <div class="d-flex align-items-center mt-2 mt-md-0">
+              <img src="/assets/images/avatars/female-4.jpg" alt="Andrea Souzakis" class="avatar avatar-sm mr-2">
+              <span class="h6 mb-0">Andrea Souzakis</span>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
+          <div class="col-xl-7 col-md-6">
+            <h5 class="mb-0">Lunch</h5>
+          </div>
+          <div class="col-md">
+            <span>12:30pm</span>
+          </div>
+          <div class="col-md">
+            <span>–</span>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
+          <div class="col-xl-7 col-md-6">
+            <h5 class="mb-0">Recharging Your Creativity</h5>
+          </div>
+          <div class="col-md">
+            <span>1:30pm</span>
+          </div>
+          <div class="col-md">
+            <div class="d-flex align-items-center mt-2 mt-md-0">
+              <img src="/assets/images/avatars/female-3.jpg" alt="Candice Tierman" class="avatar avatar-sm mr-2">
+              <span class="h6 mb-0">Candice Tierman</span>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
+          <div class="col-xl-7 col-md-6">
+            <h5 class="mb-0">Understanding Git</h5>
+          </div>
+          <div class="col-md">
+            <span>2:30pm</span>
+          </div>
+          <div class="col-md">
+            <div class="d-flex align-items-center mt-2 mt-md-0">
+              <img src="/assets/images/avatars/female-4.jpg" alt="Andrea Souzakis" class="avatar avatar-sm mr-2">
+              <span class="h6 mb-0">Andrea Souzakis</span>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
+          <div class="col-xl-7 col-md-6">
+            <h5 class="mb-0">Node Essentials</h5>
+          </div>
+          <div class="col-md">
+            <span>3:30pm</span>
+          </div>
+          <div class="col-md">
+            <div class="d-flex align-items-center mt-2 mt-md-0">
+              <img src="/assets/images/avatars/male-2.jpg" alt="Benjamin Cameron" class="avatar avatar-sm mr-2">
+              <span class="h6 mb-0">Benjamin Cameron</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div id="workshops" class="list-group list-group-flush tab-pane fade" role="tabpanel"
+        aria-labelledby="workshops-tab">
+        <a href="#" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
+          <div class="col-xl-7 col-md-6">
+            <h5 class="mb-0">Registration</h5>
+          </div>
+          <div class="col-md">
+            <span>8:30am</span>
+          </div>
+          <div class="col-md">
+            <span>–</span>
+          </div>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
+          <div class="col-xl-7 col-md-6">
+            <h5 class="mb-0">Understanding Git</h5>
+          </div>
+          <div class="col-md">
+            <span>3:30pm</span>
+          </div>
+          <div class="col-md">
+            <div class="d-flex align-items-center mt-2 mt-md-0">
+              <img src="/assets/images/avatars/female-4.jpg" alt="Andrea Souzakis" class="avatar avatar-sm mr-2">
+              <span class="h6 mb-0">Andrea Souzakis</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- <section class="bg-primary-3 text-light has-divider">
+  <div class="container">
+    <div class="row mb-4">
+      <h2 class="h1">Venue &amp; Surroundings</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4 mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+        <a href="#">
+          <img src="/assets/images/event-2.jpg" alt="Image" class="rounded">
+        </a>
+        <div class="my-3">
+          <span class="badge badge-primary-2">Venue</span>
         </div>
-        <div class="col-auto">
-          <ul class="nav" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link btn active" href="#talks" id="talks-tab" data-toggle="tab" aria-controls="talks"
-                role="tab" aria-selected="true">Talks</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn" href="#workshops" id="workshops-tab" data-toggle="tab" aria-controls="workshops"
-                role="tab" aria-selected="false">Workshops</a>
-            </li>
-          </ul>
+        <h3>Exhibition Centre</h3>
+        <p class="pr-lg-4">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+        <a href="#" class="hover-arrow">Visit the website</a>
+      </div>
+      <div class="col-md-4 mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="200">
+        <a href="#">
+          <img src="/assets/images/event-3.jpg" alt="Image" class="rounded">
+        </a>
+        <div class="my-3">
+          <span class="badge badge-primary-2">Accomodation</span>
+        </div>
+        <h3>Rydges on Collins, Melbourne</h3>
+        <p class="pr-lg-4">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+        <a href="#" class="hover-arrow">Visit the website</a>
+      </div>
+      <div class="col-md-4 mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="300">
+        <a href="#">
+          <img src="/assets/images/event-4.jpg" alt="Image" class="rounded">
+        </a>
+        <div class="my-3">
+          <span class="badge badge-primary-2">After Party</span>
+        </div>
+        <h3>Rack City</h3>
+        <p class="pr-lg-4">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+        <a href="#" class="hover-arrow">Visit the website</a>
+      </div>
+    </div>
+  </div>
+  <div class="divider">
+    <img src="/assets/images/dividers/divider-3.svg" alt="graphical divider" data-inject-svg />
+  </div>
+</section> -->
+
+<section>
+  <div class="container">
+    <div class="row mb-4 justify-content-center text-center">
+      <div class="col-xl-8 col-lg-9">
+        <h2 class="display-4">Get Your Tickets!</h2>
+        <p class="lead">Student Pricing and group discounts available, <a href="mailto:tickets@refactorconf.com">contact us</a> for details.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-xl-7" data-aos="fade-up">
+        <div
+          class="card card-lg card-body flex-sm-row align-items-center pricing-ticket bg-primary-2 layer-2 text-light">
+          <div class="mx-2 text-center text-sm-left mb-3 mb-sm-0">
+            <span class="h1 d-block">All Access</span>
+            <p class="lead pr-xl-3">Every talk, workshop, and event.<br />Breakfast & Lunch included.
+            </p>
+            <a href="{{ page.tickets }}" class="btn btn-lg mt-2 btn-primary">Purchase Now</a>
+          </div>
+
+          <div class="mx-2 text-center">
+            <span class="text-small">Starting at:</span>
+
+            <div class="d-flex align-items-end mb-2">
+              <span class="h3 mb-0">$</span>
+              <span class="display-3 mb-0">100</span>
+              <span class="mb-0 text-small">CAD</span>
+            </div>
+
+            <span class="text-small">No hidden fees!</span>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <span>Bringing the whole company? <a href="mailto:tickets@refactorconf.com" class="hover-arrow">Get in touch</a>
+          </span>
         </div>
       </div>
-      <div class="row no-gutters d-none d-md-flex bg-white py-3">
-        <div class="col-xl-7 col-md-6">
-          <span class="h6 mb-0 text-muted">Title</span>
-        </div>
-        <div class="col">
-          <span class="h6 mb-0 text-muted">Time</span>
-        </div>
-        <div class="col">
-          <span class="h6 mb-0 text-muted">Speaker</span>
+    </div>
+  </div>
+</section>
+
+<!--
+<section class="bg-primary-alt has-divider">
+  <div class="divider flip-y">
+    <img src="/assets/images/dividers/divider-3.svg" alt="graphical divider" data-inject-svg />
+  </div>
+  <div class="container">
+    <div class="row align-items-center justify-content-around">
+      <div class="col-md-6 col-xl-5 mb-3 mb-md-0">
+        <div class="row justify-content-center">
+          <div class="col-xl-10 col-lg-11">
+            <h3 class="display-4">Learn, Share, Immerse.</h3>
+            <p class="lead">.</p>
+            <a href="#" class="lead hover-arrow">View 2018 Highlights</a>
+          </div>
         </div>
       </div>
 
-      <div class="tab-content" data-aos="fade-up">
-        <div id="talks" class="list-group list-group-flush tab-pane fade show active" role="tabpanel"
-          aria-labelledby="talks-tab">
-          <a href="#" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
-            <div class="col-xl-7 col-md-6">
-              <h5 class="mb-0">Registration</h5>
-            </div>
-            <div class="col-md">
-              <span>8:30am</span>
-            </div>
-            <div class="col-md">
-              <span>–</span>
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
-            <div class="col-xl-7 col-md-6">
-              <h5 class="mb-0">Resisting Complexity</h5>
-            </div>
-            <div class="col-md">
-              <span>9:30am</span>
-            </div>
-            <div class="col-md">
-              <div class="d-flex align-items-center mt-2 mt-md-0">
-                <img src="/assets/images/avatars/male-1.jpg" alt="Benjamin Cameron" class="avatar avatar-sm mr-2">
-                <span class="h6 mb-0">Benjamin Cameron</span>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
-            <div class="col-xl-7 col-md-6">
-              <h5 class="mb-0">Freelancing and The Sharing Economy</h5>
-            </div>
-            <div class="col-md">
-              <span>10:20am</span>
-            </div>
-            <div class="col-md">
-              <div class="d-flex align-items-center mt-2 mt-md-0">
-                <img src="/assets/images/avatars/male-4.jpg" alt="Cedric Vance" class="avatar avatar-sm mr-2">
-                <span class="h6 mb-0">Cedric Vance</span>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
-            <div class="col-xl-7 col-md-6">
-              <h5 class="mb-0">Marketing A Unique Skill-set</h5>
-            </div>
-            <div class="col-md">
-              <span>11:30am</span>
-            </div>
-            <div class="col-md">
-              <div class="d-flex align-items-center mt-2 mt-md-0">
-                <img src="/assets/images/avatars/female-4.jpg" alt="Andrea Souzakis" class="avatar avatar-sm mr-2">
-                <span class="h6 mb-0">Andrea Souzakis</span>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
-            <div class="col-xl-7 col-md-6">
-              <h5 class="mb-0">Lunch</h5>
-            </div>
-            <div class="col-md">
-              <span>12:30pm</span>
-            </div>
-            <div class="col-md">
-              <span>–</span>
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
-            <div class="col-xl-7 col-md-6">
-              <h5 class="mb-0">Recharging Your Creativity</h5>
-            </div>
-            <div class="col-md">
-              <span>1:30pm</span>
-            </div>
-            <div class="col-md">
-              <div class="d-flex align-items-center mt-2 mt-md-0">
-                <img src="/assets/images/avatars/female-3.jpg" alt="Candice Tierman" class="avatar avatar-sm mr-2">
-                <span class="h6 mb-0">Candice Tierman</span>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
-            <div class="col-xl-7 col-md-6">
-              <h5 class="mb-0">Understanding Git</h5>
-            </div>
-            <div class="col-md">
-              <span>2:30pm</span>
-            </div>
-            <div class="col-md">
-              <div class="d-flex align-items-center mt-2 mt-md-0">
-                <img src="/assets/images/avatars/female-4.jpg" alt="Andrea Souzakis" class="avatar avatar-sm mr-2">
-                <span class="h6 mb-0">Andrea Souzakis</span>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
-            <div class="col-xl-7 col-md-6">
-              <h5 class="mb-0">Node Essentials</h5>
-            </div>
-            <div class="col-md">
-              <span>3:30pm</span>
-            </div>
-            <div class="col-md">
-              <div class="d-flex align-items-center mt-2 mt-md-0">
-                <img src="/assets/images/avatars/male-2.jpg" alt="Benjamin Cameron" class="avatar avatar-sm mr-2">
-                <span class="h6 mb-0">Benjamin Cameron</span>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div id="workshops" class="list-group list-group-flush tab-pane fade" role="tabpanel"
-          aria-labelledby="workshops-tab">
-          <a href="#" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
-            <div class="col-xl-7 col-md-6">
-              <h5 class="mb-0">Registration</h5>
-            </div>
-            <div class="col-md">
-              <span>8:30am</span>
-            </div>
-            <div class="col-md">
-              <span>–</span>
+      <div class="col-md-5 col-lg-6 mb-3 mb-md-0">
+        <div class="image-collage">
+          <a href="/assets/images/gallery/1.jpg" data-fancybox="Collage Gallery" class="d-none d-lg-block">
+            <div data-jarallax-element="0 12">
+              <img src="/assets/images/gallery/1.jpg" alt="Image" class="rounded" data-aos="fade-right">
             </div>
           </a>
 
-          <a href="#" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
-            <div class="col-xl-7 col-md-6">
-              <h5 class="mb-0">Understanding Git</h5>
+          <a href="/assets/images/gallery/2.jpg" data-fancybox="Collage Gallery">
+            <div>
+              <img src="/assets/images/gallery/2.jpg" alt="Image" class="rounded" data-aos="fade-up">
             </div>
-            <div class="col-md">
-              <span>3:30pm</span>
-            </div>
-            <div class="col-md">
-              <div class="d-flex align-items-center mt-2 mt-md-0">
-                <img src="/assets/images/avatars/female-4.jpg" alt="Andrea Souzakis" class="avatar avatar-sm mr-2">
-                <span class="h6 mb-0">Andrea Souzakis</span>
-              </div>
+          </a>
+          <a href="/assets/images/gallery/3.jpg" data-fancybox="Collage Gallery" class="d-none d-lg-block">
+            <div data-jarallax-element="0 -12">
+              <img src="/assets/images/gallery/3.jpg" alt="Image" class="rounded" data-aos="fade-left">
             </div>
           </a>
         </div>
       </div>
     </div>
-  </section> -->
+  </div>
+</section>
+-->
 
-  <!-- <section class="bg-primary-3 text-light has-divider">
-    <div class="container">
-      <div class="row mb-4">
-        <h2 class="h1">Venue &amp; Surroundings</h2>
-      </div>
-      <div class="row">
-        <div class="col-md-4 mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="100">
-          <a href="#">
-            <img src="/assets/images/event-2.jpg" alt="Image" class="rounded">
-          </a>
-          <div class="my-3">
-            <span class="badge badge-primary-2">Venue</span>
+<footer class="pb-4 bg-primary-3 text-light" id="footer">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col">
+        <div class="card card-body border-0 o-hidden mb-0 bg-primary-2 text-light">
+          <div class="position-relative d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="h3 text-center mb-md-0">We're looking for sponsors!</div>
+            <a href="mailto:sponsors@refactorconf.com" class="btn btn-lg btn-primary">Sponsor Now</a>
           </div>
-          <h3>Exhibition Centre</h3>
-          <p class="pr-lg-4">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
-          </p>
-          <a href="#" class="hover-arrow">Visit the website</a>
         </div>
-        <div class="col-md-4 mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="200">
-          <a href="#">
-            <img src="/assets/images/event-3.jpg" alt="Image" class="rounded">
-          </a>
-          <div class="my-3">
-            <span class="badge badge-primary-2">Accomodation</span>
-          </div>
-          <h3>Rydges on Collins, Melbourne</h3>
-          <p class="pr-lg-4">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
-          </p>
-          <a href="#" class="hover-arrow">Visit the website</a>
-        </div>
-        <div class="col-md-4 mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="300">
-          <a href="#">
-            <img src="/assets/images/event-4.jpg" alt="Image" class="rounded">
-          </a>
-          <div class="my-3">
-            <span class="badge badge-primary-2">After Party</span>
-          </div>
-          <h3>Rack City</h3>
-          <p class="pr-lg-4">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
-          </p>
-          <a href="#" class="hover-arrow">Visit the website</a>
-        </div>
+
       </div>
     </div>
-    <div class="divider">
-      <img src="/assets/images/dividers/divider-3.svg" alt="graphical divider" data-inject-svg />
-    </div>
-  </section> -->
+    <div class="row mb-5">
+      <!-- <div class="col-6 col-lg-3 col-xl-2">
+        <h5>Navigate</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Speakers</a>
+          </li>
 
-  <section>
-    <div class="container">
-      <div class="row mb-4 justify-content-center text-center">
-        <div class="col-xl-8 col-lg-9">
-          <h2 class="display-4">Get Your Tickets!</h2>
-          <p class="lead">Student Pricing and group discounts available, <a href="mailto:tickets@refactorconf.com">contact us</a> for details.</p>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-8 col-xl-7" data-aos="fade-up">
-          <div
-            class="card card-lg card-body flex-sm-row align-items-center pricing-ticket bg-primary-2 layer-2 text-light">
-            <div class="mx-2 text-center text-sm-left mb-3 mb-sm-0">
-              <span class="h1 d-block">All Access</span>
-              <p class="lead pr-xl-3">Every talk, workshop, and event.<br />Breakfast & Lunch included.
-              </p>
-              <a href="{{ page.tickets }}" class="btn btn-lg mt-2 btn-primary">Purchase Now</a>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Schedule</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Sponsors</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/conduct.html" class="nav-link">Code of Conduct</a>
+          </li>
+        </ul>
+      </div> -->
+
+      <div class="col-6 col-lg">
+        <h5>Find Us</h5>
+        <ul class="list-unstyled">
+          <li class="mb-3 d-flex">
+            <img class="icon" src="/assets/images/icons/marker-1.svg" alt="marker-1 icon" data-inject-svg />
+            <div class="ml-3">
+              <span>Toronto Reference Library<br />789 Yonge St, Toronto, ON M4W 2G8</span>
             </div>
+          </li>
+          <li class="mb-3 d-flex">
+            <img class="icon" src="/assets/images/icons/dollar.svg" alt="decoration" data-inject-svg />
+            <div class="ml-3">
+              <a href="mailto:sponsor@refactorconf.com">sponsor@refactorconf.com</a>
+            </div>
+          </li>
+          <li class="mb-3 d-flex">
+            <img class="icon" src="/assets/images/icons/mail.svg" alt="mail icon" data-inject-svg />
+            <div class="ml-3">
+              <a href="mailto:contact@refactorconf.com">contact@refactorconf.com</a>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-            <div class="mx-2 text-center">
-              <span class="text-small">Starting at:</span>
-
-              <div class="d-flex align-items-end mb-2">
-                <span class="h3 mb-0">$</span>
-                <span class="display-3 mb-0">100</span>
-                <span class="mb-0 text-small">CAD</span>
-              </div>
-
-              <span class="text-small">No hidden fees!</span>
+      <div class="col-lg-5 col-xl-4 mt-3 mt-lg-0">
+        <h5>Subscribe</h5>
+        <p>Get the latest event announcements.</p>
+        <form action="https://refactorconf.us16.list-manage.com/subscribe/post?u=a41aeaf0cf76aaf98b8e17255&amp;id=47e0c35a61" method="post" target="_blank" novalidate>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a41aeaf0cf76aaf98b8e17255_47e0c35a61" tabindex="-1" value=""></div>
+          <div class="form-row">
+            <div class="col-12">
+              <input type="email" class="form-control mb-2" placeholder="Email Address" name="EMAIL" required>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary btn-loading btn-block">Subscribe</button>
             </div>
           </div>
-
-          <div class="text-center">
-            <span>Bringing the whole company? <a href="mailto:tickets@refactorconf.com" class="hover-arrow">Get in touch</a>
-            </span>
-          </div>
-        </div>
+        </form>
+        <small class="text-muted form-text">We hate spam as much as you do, and We'll never share your details with a 3rd party.</small>
       </div>
     </div>
-  </section>
 
-  <!--
-  <section class="bg-primary-alt has-divider">
-    <div class="divider flip-y">
-      <img src="/assets/images/dividers/divider-3.svg" alt="graphical divider" data-inject-svg />
-    </div>
-    <div class="container">
-      <div class="row align-items-center justify-content-around">
-        <div class="col-md-6 col-xl-5 mb-3 mb-md-0">
-          <div class="row justify-content-center">
-            <div class="col-xl-10 col-lg-11">
-              <h3 class="display-4">Learn, Share, Immerse.</h3>
-              <p class="lead">.</p>
-              <a href="#" class="lead hover-arrow">View 2018 Highlights</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-5 col-lg-6 mb-3 mb-md-0">
-          <div class="image-collage">
-            <a href="/assets/images/gallery/1.jpg" data-fancybox="Collage Gallery" class="d-none d-lg-block">
-              <div data-jarallax-element="0 12">
-                <img src="/assets/images/gallery/1.jpg" alt="Image" class="rounded" data-aos="fade-right">
-              </div>
+    <div class="row justify-content-center mb-2">
+      <div class="col-auto">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/company/tech-masters-community" class="nav-link">
+              <img class="icon undefined" src="/assets/images/icons/linkedin.svg" alt="linkedin social icon" data-inject-svg/>
             </a>
-
-            <a href="/assets/images/gallery/2.jpg" data-fancybox="Collage Gallery">
-              <div>
-                <img src="/assets/images/gallery/2.jpg" alt="Image" class="rounded" data-aos="fade-up">
-              </div>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/refactorconf" class="nav-link">
+              <img class="icon undefined" src="/assets/images/icons/twitter.svg" alt="twitter social icon" data-inject-svg/>
             </a>
-            <a href="/assets/images/gallery/3.jpg" data-fancybox="Collage Gallery" class="d-none d-lg-block">
-              <div data-jarallax-element="0 -12">
-                <img src="/assets/images/gallery/3.jpg" alt="Image" class="rounded" data-aos="fade-left">
-              </div>
+          </li>
+          <li class="nav-item">
+            <a href="https://youtube.com/techmasterstv" class="nav-link">
+              <img class="icon undefined" src="/assets/images/icons/youtube.svg" alt="youtube social icon" data-inject-svg/>
             </a>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </div>
-  </section>
-  -->
+  </div>
+</footer>
 
-  <footer class="pb-4 bg-primary-3 text-light" id="footer">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col">
-          <div class="card card-body border-0 o-hidden mb-0 bg-primary-2 text-light">
-            <div class="position-relative d-flex flex-column flex-md-row justify-content-between align-items-center">
-              <div class="h3 text-center mb-md-0">We're looking for sponsors!</div>
-              <a href="mailto:sponsors@refactorconf.com" class="btn btn-lg btn-primary">Sponsor Now</a>
-            </div>
-          </div>
+<!-- Required vendor scripts -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=Array.from"></script>
+<script src="https://unpkg.com/objectFitPolyfill@2.3.0/dist/objectFitPolyfill.min.js"></script>
 
-        </div>
-      </div>
-      <div class="row mb-5">
-        <!-- <div class="col-6 col-lg-3 col-xl-2">
-          <h5>Navigate</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a href="#" class="nav-link">Speakers</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#" class="nav-link">Schedule</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#" class="nav-link">Sponsors</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="/conduct.html" class="nav-link">Code of Conduct</a>
-            </li>
-          </ul>
-        </div> -->
-
-        <div class="col-6 col-lg">
-          <h5>Find Us</h5>
-          <ul class="list-unstyled">
-            <li class="mb-3 d-flex">
-              <img class="icon" src="/assets/images/icons/marker-1.svg" alt="marker-1 icon" data-inject-svg />
-              <div class="ml-3">
-                <span>Toronto Reference Library<br />789 Yonge St, Toronto, ON M4W 2G8</span>
-              </div>
-            </li>
-            <li class="mb-3 d-flex">
-              <img class="icon" src="/assets/images/icons/dollar.svg" alt="decoration" data-inject-svg />
-              <div class="ml-3">
-                <a href="mailto:sponsor@refactorconf.com">sponsor@refactorconf.com</a>
-              </div>
-            </li>
-            <li class="mb-3 d-flex">
-              <img class="icon" src="/assets/images/icons/mail.svg" alt="mail icon" data-inject-svg />
-              <div class="ml-3">
-                <a href="mailto:contact@refactorconf.com">contact@refactorconf.com</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-lg-5 col-xl-4 mt-3 mt-lg-0">
-          <h5>Subscribe</h5>
-          <p>Get the latest event announcements.</p>
-          <form action="https://refactorconf.us16.list-manage.com/subscribe/post?u=a41aeaf0cf76aaf98b8e17255&amp;id=47e0c35a61" method="post" target="_blank" novalidate>
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a41aeaf0cf76aaf98b8e17255_47e0c35a61" tabindex="-1" value=""></div>
-            <div class="form-row">
-              <div class="col-12">
-                <input type="email" class="form-control mb-2" placeholder="Email Address" name="EMAIL" required>
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn btn-primary btn-loading btn-block">Subscribe</button>
-              </div>
-            </div>
-          </form>
-          <small class="text-muted form-text">We hate spam as much as you do, and We'll never share your details with a 3rd party.</small>
-        </div>
-      </div>
-
-      <div class="row justify-content-center mb-2">
-        <div class="col-auto">
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="https://www.linkedin.com/company/tech-masters-community" class="nav-link">
-                <img class="icon undefined" src="/assets/images/icons/linkedin.svg" alt="linkedin social icon" data-inject-svg/>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="https://twitter.com/refactorconf" class="nav-link">
-                <img class="icon undefined" src="/assets/images/icons/twitter.svg" alt="twitter social icon" data-inject-svg/>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="https://youtube.com/techmasterstv" class="nav-link">
-                <img class="icon undefined" src="/assets/images/icons/youtube.svg" alt="youtube social icon" data-inject-svg/>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <a href="#" class="btn back-to-top btn-primary btn-round" data-smooth-scroll data-aos="fade-up"
-    data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
-    <img class="icon" src="/assets/images/icons/arrow-up.svg" alt="arrow-up icon" data-inject-svg />
-  </a>
-
-  <!-- Required vendor scripts -->
-  <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.slim.min.js"></script>
-  <script src="https://unpkg.com/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
-  <script src="https://unpkg.com/smooth-scroll@~16.1.0"></script>
-  <script src="https://unpkg.com/aos@~2.3.4"></script>
-  <script src="https://unpkg.com/@fancyapps/fancybox@3.5.2"></script>
-  <script src="https://unpkg.com/jquery-countdown@~2.2.0"></script>
-  <script src="https://unpkg.com/scrollmonitor@~1.2.4"></script>
-  <script src="https://unpkg.com/@tanem/svg-injector@~8.0.30/dist/svg-injector.umd.production.js"></script>
-  <script src="/assets/js/theme.js"></script>
-</body>
+<script src="https://unpkg.com/jquery@3.4.1/dist/jquery.slim.min.js"></script>
+<script src="https://unpkg.com/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@~2.3.4"></script>
+<script src="https://unpkg.com/@fancyapps/fancybox@3.5.2"></script>
+<script src="https://unpkg.com/jquery-countdown@~2.2.0"></script>
+<script src="https://unpkg.com/scrollmonitor@~1.2.4"></script>
+<script src="https://unpkg.com/@tanem/svg-injector@~8.0.30/dist/svg-injector.umd.production.js"></script>
+<script src="/assets/js/theme.js"></script>
