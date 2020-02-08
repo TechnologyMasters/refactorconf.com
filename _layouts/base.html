@@ -6,7 +6,9 @@
 
     <link rel="stylesheet" href="/assets/css/theme.css"/>
 
-    {% seo %}
+    <title>{{ page.title }}</title>
+
+    {% seo title=false %}
 
     {% include analytics.html %}
   </head>
