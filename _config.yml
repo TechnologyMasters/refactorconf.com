@@ -19,26 +19,18 @@ twitter:
 facebook:
   admins: 227304446
 
-# logo: /assets/images/logo.png
+social:
+  name: REFACTOR Conference
+  links:
+    - https://twitter.com/RefactorConf
+    - https://www.linkedin.com/company/tech-masters-community
+    - https://github.com/TechnologyMasters
 
-# social:
-#   name: Ahmad Nassri
-#   links:
-#     - https://twitter.com/ahmadnassri
-#     - https://www.facebook.com/ahmad.nassri
-#     - https://www.linkedin.com/in/ahmadnassri
-#     - https://github.com/ahmadnassri
-#     - https://keybase.io/ahmadnassri
-
-# todo
-# webmaster_verifications:
-  # google: 123
-  # bing: 123
-  # alexa: 1234
-  # yandex: 1234
-  # baidu: 1234
+logo: /assets/images/logo.png
 
 # build config
+
+timezone: America/Toronto
 
 future: true
 
@@ -66,13 +58,11 @@ collections:
     permalink: /:path/index.html
 
 defaults:
-  # - scope:
-  #     path: ""
-  #   values:
-  #     image:
-  #       path: /assets/images/logo.png
-  #       height: 1000
-  #       width: 1000
+  - scope:
+      path: ""
+    values:
+      seo:
+        type: Event
 
   - scope:
       type: events

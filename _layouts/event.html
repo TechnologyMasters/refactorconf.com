@@ -11,7 +11,7 @@ layout: base
     <a class="navbar-brand fade-page" href="/">{{ page.title }}</a>
 
     <div class="collapse navbar-collapse justify-content-end">
-      <a href="{{ page.tickets }}" class="btn btn-primary ml-lg-3">Buy Tickets</a>
+      <a href="{{ page.tickets.url }}" class="btn btn-primary ml-lg-3">Buy Tickets</a>
       <a href="{{ page.call-for-pappers }}" target="_blank" class="btn btn-primary-2 ml-lg-3">Call for Speakers</a>
     </div>
   </div>
@@ -23,8 +23,8 @@ layout: base
       <div class="col-lg-9 col-xl-8">
         <h5>{{ page.date | date_to_long_string }}</h5>
         <h1 class="display-1">{{ page.title }}</h1>
-        <p class="lead mb-4">{{ page.location }}<br/>{{ page.address }}</p>
-        <a href="{{ page.tickets }}" class="btn btn-primary btn-lg">Buy Tickets</a>
+        <p class="lead mb-4">{{ page.location.name }}<br/>{{ page.location.street }}, {{ page.location.city }}, Canada</p>
+        <a href="{{ page.tickets.url }}" class="btn btn-primary btn-lg">Buy Tickets</a>
         <a class="btn btn-primary-2 btn-lg" href="{{ page.call-for-pappers }}" target="_blank">Call for Speakers</a>
       </div>
     </div>
@@ -121,7 +121,7 @@ layout: base
             <span class="h1 d-block">All Access</span>
             <p class="lead pr-xl-3">Every talk, workshop, and event.<br />Breakfast & Lunch included.
             </p>
-            <a href="{{ page.tickets }}" class="btn btn-lg mt-2 btn-primary">Purchase Now</a>
+            <a href="{{ page.tickets.url }}" class="btn btn-lg mt-2 btn-primary">Purchase Now</a>
           </div>
 
           <div class="mx-2 text-center">

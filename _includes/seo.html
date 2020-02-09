@@ -1,0 +1,42 @@
+{% capture seo_meta %}{% seo title=false %}{% endcapture %}
+
+{% assign extract = seo_meta | split: '<script type="application/ld+json">' | first %}
+
+{{ extract }}
+
+{% if page.collection == 'events' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": {{ page.title | jsonify }},
+    "description": {{ page.description | jsonify }},
+    "image": {{ page.image | jsonify }},
+    "startDate": {{ page.date | date_to_xmlschema | jsonify }},
+    "location": {
+      "@type": "Place",
+      "name": {{ page.location.name | jsonify }},
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": {{ page.location.street | jsonify }},
+        "addressLocality": {{ page.location.city | jsonify }},
+        "addressRegion": {{ page.location.region | jsonify }},
+        "postalCode": {{ page.location.postal | jsonify }},
+        "addressCountry": {{ page.location.country | jsonify }}
+      }
+    },
+    "offers": [
+      {% for ticket in page.tickets.list %}
+      {
+        "@type": "Offer",
+        "name": {{ ticket.name | jsonify }},
+        "price": {{ ticket.price | jsonify }},
+        "priceCurrency": "CAD",
+        "url": {{ page.tickets.url | jsonify }},
+        "availability": "https://schema.org/InStock"
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+  </script>
+{% endif %}
