@@ -1,6 +1,7 @@
 ---
 ---
-@import "https://use.typekit.net/yrq5ibk.css";
+@import url("https://use.typekit.net/yrq5ibk.css");
+@import url("https://unpkg.com/aos@2.3.4/dist/aos.css");
 
 @import "user-variables";
 @import "bootstrap/scss/functions";
@@ -26,10 +27,11 @@
 
 /* Common Loader CSS */
 
-@keyframes hideLoader{
+@keyframes hideLoader {
   0%{ width: 100%; height: 100%; }
   100%{ width: 0; height: 0; }
 }
+
 body > div.loader{
       position: fixed;
       background: white;
@@ -54,19 +56,52 @@ body.loaded > div.loader{
   animation: hideLoader .5s linear .5s forwards;
 }
 
+
+/* Typing Animation */
+.loading-animation {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: typing 1s linear infinite alternate;
+  position: relative;
+  left: -12px;
+  }
+
+  @keyframes typing {
+  0% {
+    background-color: rgba(100,100,100, 1);
+    box-shadow: 12px 0px 0px 0px rgba(100,100,100, 0.2),
+      24px 0px 0px 0px rgba(100,100,100, 0.2);
+  }
+
+  25% {
+    background-color: rgba(100,100,100, 0.4);
+    box-shadow: 12px 0px 0px 0px rgba(100,100,100, 2),
+      24px 0px 0px 0px rgba(100,100,100, 0.2);
+  }
+
+  75% {
+    background-color: rgba(100,100,100, 0.4);
+    box-shadow: 12px 0px 0px 0px rgba(100,100,100, 0.2),
+      24px 0px 0px 0px rgba(100,100,100, 1);
+  }
+  }
+
+
 section.bg-primary {
   background-image: url('/assets/images/bg.jpg');
-  background-color: #ff7d00;
+  background-color: $primary;
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center center;
 }
 
+html[data-useragent*='Edge/'],
 html[data-useragent*='MSIE 10.0'],
 html[data-useragent*='rv:11.0'] {
   section.bg-primary {
-    background: none;
-    $color: rgba(#ff7d00, 50%);
-    background: linear-gradient($color, $color), url('/assets/images/bg.jpg');
+    $color: rgba($primary, 70%);
+    background-image: linear-gradient($color, $color), url('/assets/images/bg.jpg');
   }
 }
+

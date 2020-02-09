@@ -8,9 +8,11 @@
 // Color Scheme
 // Uncomment the variables below and change the hex values.
 
+// http://colormind.io/bootstrap/
+
 $primary:       #ff7d00;
-$primary-2:     #2A2A72;
-$primary-3:     #020122;
+$primary-2:     #7E7F82;
+$primary-3:     #252631;
 
 $theme-color-scheme: (
     "primary":    $primary,
@@ -21,7 +23,7 @@ $theme-color-scheme: (
 $theme-colors: (
     "primary":    $primary,
     "primary-2":  $primary-2,
-    "primary-3":  $primary-3,
+    "primary-3":  $primary-3
 );
 
 .card svg.icon {
