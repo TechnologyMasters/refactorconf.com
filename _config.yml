@@ -55,7 +55,7 @@ collections_dir: collections
 collections:
   events:
     output: true
-    permalink: /:path.html
+    permalink: /:path
 
 defaults:
   - scope:
