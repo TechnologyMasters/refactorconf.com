@@ -6,7 +6,6 @@
 
 .card-img {
   background-color: #1c1e35;
-  overflow: hidden;
 
   @include media-breakpoint-down(sm) {
     @include border-bottom-radius(0);
