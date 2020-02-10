@@ -1,3 +1,10 @@
+{% assign images = page.url | remove: "index.html" | append: "images" %}
+
+<link rel="apple-touch-icon" sizes="180x180" href="{{ images }}/favicon/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="{{ images }}/favicon/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="{{ images }}/favicon/favicon-16x16.png"/>
+<link rel="icon" type="image/x-icon" href="{{ images }}/favicon/favicon.ico"/>
+
 {% capture seo_meta %}{% seo title=false %}{% endcapture %}
 
 {% assign extract = seo_meta | split: '<script type="application/ld+json">' | first %}
@@ -11,7 +18,10 @@
     "@type": "Event",
     "name": {{ page.title | jsonify }},
     "description": {{ page.description | jsonify }},
-    "image": {{ page.image | jsonify }},
+    "image": [
+      {{ page.image | jsonify }},
+      "{{ images }}/apple-touch-icon.png",
+    ],
     "startDate": {{ page.date | date_to_xmlschema | jsonify }},
     "location": {
       "@type": "Place",
