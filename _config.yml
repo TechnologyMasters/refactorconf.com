@@ -61,15 +61,13 @@ defaults:
   - scope:
       path: ""
     values:
-      seo:
-        type: Event
+      twitter:
+        card: summary_large_image
 
   - scope:
       type: events
     values:
       layout: event
-      twitter:
-        card: summary_large_image
 
 plugins:
   - jekyll-redirect-from
