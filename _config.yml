@@ -46,16 +46,16 @@ sass:
   sass_dir: _sass
   style: compressed
 
-feed:
-  collections:
-    - events
+# feed:
+#   collections:
+#     - events
 
 collections_dir: collections
 
 collections:
   events:
     output: true
-    permalink: /:path/index.html
+    permalink: /:path.html
 
 defaults:
   - scope:
