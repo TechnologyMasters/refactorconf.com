@@ -14,6 +14,23 @@
   </head>
 
   <body>
+    <div class="loader">
+      <div class="loading-animation"></div>
+    </div>
+
     {{ content }}
+
+    <!-- polyfills -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=Array.from"></script>
+    <script src="https://unpkg.com/objectFitPolyfill@2.3.0/dist/objectFitPolyfill.min.js"></script>
+
+    <!-- Required vendor scripts -->
+    <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.slim.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@~2.3.4"></script>
+    <script src="https://unpkg.com/@fancyapps/fancybox@3.5.2"></script>
+    <script src="https://unpkg.com/@tanem/svg-injector@~8.0.30/dist/svg-injector.umd.production.js"></script>
+    <script src="/assets/js/theme.js?{{ site.time }}"></script>
   </body>
 </html>
