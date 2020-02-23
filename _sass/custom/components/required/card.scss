@@ -1,11 +1,14 @@
-// 
-// 
+//
+//
 // card.scss
 //
 //
 
 .card{
   margin-bottom: $spacer;
+  &.bg-primary {
+    font-weight: 500;
+  }
   &.card-sm{
     &.card-body{
       padding: $spacer;
