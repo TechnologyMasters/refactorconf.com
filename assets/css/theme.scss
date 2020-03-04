@@ -13,6 +13,10 @@
 @import "bootstrap/scss/bootstrap";
 @import "custom/components";
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar-brand,
 .display-1 {
   font-family: abolition, sans-serif;

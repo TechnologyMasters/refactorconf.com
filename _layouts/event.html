@@ -5,11 +5,12 @@ layout: base
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
   <div class="container">
     <a class="navbar-brand fade-page" href="/">{{ page.title }}</a>
-
+    <!--
     <div class="collapse navbar-collapse justify-content-end">
       <a href="{{ page.tickets.url }}" class="btn btn-primary ml-lg-3">Buy Tickets</a>
       <a href="{{ page.call-for-pappers }}" target="_blank" class="btn btn-primary-2 ml-lg-3">Call for Speakers</a>
     </div>
+    -->
   </div>
 </nav>
 
@@ -17,11 +18,12 @@ layout: base
   <div class="container layer-2">
     <div class="row py-6 min-vh-80 align-items-center" data-aos="fade-up">
       <div class="col-lg-9 col-xl-8">
-        <h5>{{ page.date | date_to_long_string }}</h5>
+        <!-- <h5>{{ page.date | date_to_long_string }}</h5> -->
         <h1 class="display-1">{{ page.title }}</h1>
-        <p class="lead mb-4">{{ page.location.name }}<br/>{{ page.location.street }}, {{ page.location.city }}, Canada</p>
-        <a href="{{ page.tickets.url }}" class="btn btn-primary btn-lg">Buy Tickets</a>
-        <a class="btn btn-primary-2 btn-lg" href="{{ page.call-for-pappers }}" target="_blank">Call for Speakers</a>
+        <p class="lead mb-4">Event is now postponed due to <em>COVID 19</em> concerns, read on for <a href="#covid-19">more details</a></p>
+        <!-- <p class="lead mb-4">{{ page.location.name }}<br/>{{ page.location.street }}, {{ page.location.city }}, Canada</p> -->
+        <!-- <a href="{{ page.tickets.url }}" class="btn btn-primary btn-lg">Buy Tickets</a> -->
+        <!-- <a class="btn btn-primary-2 btn-lg" href="{{ page.call-for-pappers }}" target="_blank">Call for Speakers</a> -->
       </div>
     </div>
   </div>
@@ -30,13 +32,17 @@ layout: base
   </div>
 </section>
 
-<section class="bg-primary-3 text-light has-divider">
+<section class="bg-primary-3 text-light has-divider" id="covid-19">
   <div class="container">
     <div class="row justify-content-between">
       <div class="col-12">
-        <!-- <div class="col-md-6 mb-3 mb-md-0"> -->
-        <h2 class="h1">Community-focused, single-track, one-day conference</h2>
-        <p class="lead">{{ page.description }}</p>
+        <!-- <h2 class="h1">Community-focused, single-track, one-day conference</h2> -->
+        <!-- <p class="lead">{{ page.description }}</p> -->
+        <h2 class="h1">COVID 19 Update</h2>
+        <p class="lead">We've been listening to our community's concerns over the ongoing COVID 19 updates and many of our speakers and sponsors have expressed hesitation as well due to travel risks.</p>
+        <p class="lead">As an independent, volunteer driven community, in-person events represent a big and costly endeavour. We strive to create friendly and educational spaces for our members to interact, share and learn, but given the health concerns, the potential downsides are not worth the risk.</p>
+        <p class="lead">With that in mind, <strong>We are cancelling all events until further notice</strong>. But fear not! the community connections and learning won't stop, as the conversations and community continues on our <a href="htps://techmasters.community">TechMasters Slack</a>.</p>
+        <p>For any further inquiries, please feel free to drop us an email at <a href="mailto:contact@refactorconf.com">contact@refactorconf.com</a>.</p>
       </div>
     </div>
   </div>
@@ -98,7 +104,7 @@ layout: base
     </div>
   </div>
 </section>
-
+<!--
 <section>
   <div class="container">
     <div class="row mb-4 justify-content-center text-center">
@@ -114,5 +120,5 @@ layout: base
     </div>
   </div>
 </section>
-
+-->
 {% include footer.html %}
